@@ -18,10 +18,5 @@ public class Main {
         System.out.println(employeesList.findByExp(2));
 
         System.out.println(employeesList.findByUUID(employee.getID()));
-        Set<String> strs = new HashSet<>(Arrays.asList("aaaa","bbb","aa","bbbb","bbb"));
-
-        strs = strs.stream().filter( x -> !x.contains("aaa")).collect(Collectors.toSet());
-        System.out.println(strs);
-
     }
 }
